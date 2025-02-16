@@ -1,0 +1,47 @@
+# requirements.txt
+# Instructions for setting up and using the application
+
+# 1. Install Python 3.7 or higher
+# 2. Ensure FFmpeg is installed and available in your system's PATH. 
+#    You can check by running: ffmpeg -version
+
+#    FFmpeg Installation:
+#    - Windows: https://ffmpeg.org/download.html
+#    - Mac: brew install ffmpeg
+#    - Linux: sudo apt install ffmpeg
+
+# 3. Install the required dependencies by running:
+#    pip install -r requirements.txt
+
+speechrecognition
+pydub
+openai-whisper
+torchaudio
+numpy
+ffmpeg-python 
+scipy 
+
+# After installing the dependencies, follow these steps to use the application:
+
+# 1. Place your MP3 file(s) in the 'testFiles' folder. There is a
+#    Example: <project_root>/testFiles/your_audio_file.mp3
+
+# 2. Run the script by passing the path to the MP3 file as an argument:
+#    python main.py ../testFiles/your_audio_file.mp3
+#    NOTE: Get into the src directory before running this command.
+
+# 3. The script will:
+#    - Convert the MP3 file to WAV format (saved in the 'wavs' folder).
+#    - Transcribe the audio and save the text in the 'outputs' folder as 'transcription.txt'.
+#    NOTE: This program will check for duplicates. Outputs of mp3 files, if already present, will not be recreated. 
+#
+#    Example: The transcription will be saved as:
+#    <project_root>/outputs/transcription.txt
+
+# 4. Ensure the directory structure follows this format:
+#    <project_root>
+#    ├── outputs/         # Transcribed text files will be saved here
+#    ├── testFiles/       # Place your MP3 files here
+#    ├── wavs/            # Converted WAV files will be saved here
+#    ├── src/             # Contains the main.py script
+#    └── requirements.txt # This file
