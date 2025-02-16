@@ -31,8 +31,8 @@ scipy
 #    NOTE: Get into the src directory before running this command.
 
 # 3. The script will:
-#    - Convert the MP3 file to WAV format (saved in the 'wavs' folder).
-#    - Transcribe the audio and save the text in the 'outputs' folder as 'transcription.txt'.
+#    - Convert the MP3 file to WAV format (saved in the 'wavs' folder, which will be created if not present).
+#    - Transcribe the audio and save the text in the 'outputs' folder (also will be created if not present) as 'transcription.txt'.
 #    NOTE: This program will check for duplicates. Outputs of mp3 files, if already present, will not be recreated. 
 #
 #    Example: The transcription will be saved as:
